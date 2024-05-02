@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    background-image: linear-gradient(#00000010, transparant, #00000010);
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        padding: 0 0rem;
+        display: grid;
+        column-gap: 2rem;
+        grid-template-rows: 150px 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "video-header"
+        "video-content"
+        "suggestions";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        padding: 0 2rem;
+        display: grid;
+        column-gap: 2rem;
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr 20vw;
+        grid-template-areas:
+        "video-header video-header"
+        "video-content suggestions";
+    }
+}
+
+#video-header {
+    grid-area: video-header;
+}
+
+#suggestions {
+    grid-area: suggestions;
+}
+
+#video-content {
+    grid-area: video-content;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .video-data {
+        display: grid;
+        grid-template-rows: fit fit fit;
+        grid-template-columns: 1fr;
+        column-gap: 0rem;
+        grid-template-areas:
+            "header"
+            "statistics"
+            "description";
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .video-data {
+        display: grid;
+        grid-template-rows: fit 1fr;
+        grid-template-columns: 1fr 250px;
+        column-gap: 2rem;
+        grid-template-areas:
+            "header statistics"
+            "description statistics";
+    }
+}
+
+.video-data #header{
+    grid-area: header;
+}
+
+.video-data #description{
+    grid-area: description;
+}
+
+.video-data #statistics{
+    grid-area: statistics;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(1px);
+    background-image: url("/image.png");
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(1px);
+    background-image: url("/image.png");
+}
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+}
+
+input[type="range"]::-moz-range-track {
+} */
