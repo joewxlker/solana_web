@@ -5,5 +5,5 @@
             <stop offset="100%" style="stop-color:#14F195; stop-opacity:1" />
         </linearGradient>
     </defs>
-    <path fill="url(#blue-green-gradient)" d="M448 32H0V480H448V32zM160 224V384H96V224h64zm32-96h64V384H192V128zM352 288v96H288V288h64z"/>
+    <path fill="white" d="M448 32H0V480H448V32zM160 224V384H96V224h64zm32-96h64V384H192V128zM352 288v96H288V288h64z"/>
   </svg>

@@ -1,45 +1,41 @@
 import Image from "next/image";
-import { ShaqComponent } from "./components/shaq-component";
+import { ImageCanvas } from "./components/image-canvas-component";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start text-white max-w-[2000px] m-auto">
+    <main className="flex min-h-screen flex-col items-center justify-start text-black max-w-[2000px] m-auto">
 
-      <div id="hero" className="w-screen relative h-screen xl:max-h-[800px] lg:max-h-[800px] max-h-[1200px] max-w-[2000px] mx-auto">
-        <div className="inset-0 z-10 absolute flex flex-row items-center xl:px-5 lg:px-5 px-3">
-          <div className="flex xl:w-1/2 lg:w-1/2 w-full flex-col xl:items-stretch lg:items-stretch items-center gap-2">
-            <div className="w-full aspect-square relative xl:hidden lg:hidden block">
-              <Image src="/shaq-nobg.png" alt="" fill />
-            </div>
-            <h1 className="font-heading xl:text-8xl lg:text-6xl text-5xl text-white drop-shadow-md lg:text-left text-center bg-p2 shadow-shadow shadow-md p-2">
-              The stats win nothing. <span id="text">I’m still sexy.</span> I’m still great.
-            </h1>
-            <p className="font-body text-xl lg:text-left text-center bg-p2 shadow-shadow shadow-xl p-2 text-stone-800">~ SHEQ ONILL</p>
+      <div id="hero" className="w-screen bg-sky-300 relative h-screen xl:max-h-[800px] lg:max-h-[800px] max-h-[1200px] max-w-[2000px] mx-auto justify-center items-center flex xl:flex-row lg:flex-row flex-col">
+          <Image src="/nobg.png" alt="" height={500} width={500} className="z-10" />
+          <div className="flex flex-col gap-5 items-center justify-center z-10">
+            <p className="font-heading xl:text-9xl lg:text-9xl text-6xl text-center text-white animate-bounce">$KITI</p>
+            <audio id="music-player" src="/cafe.mp3" controls />
           </div>
-        </div>
-        <Image src="/hero.png" className="xl:block lg:block hidden" alt="" fill />
+          <Image src="/garden.png" alt="" fill />
       </div>
 
-      <section className="min-h-80 w-full gap-3 bg-p2 shadow-shadow shadow-md flex flex-col justify-center items-center xl:px-5 lg:px-5 px-3 py-20">
-        <p className="font-heading text-4xl text-center">WELCOME TO SHEQ ONILL ON SOLANA</p>
-        <video className="aspect-video w-full border-white border-8" src="/vid.mp4" controls />
-      </section>
-
-      <section className="min-h-80 w-full gap-3 shadow-shadow shadow-md flex flex-col justify-center items-center xl:px-5 lg:px-5 px-3 py-20">
-        <p className="font-heading text-4xl text-center">ABOUT SHEQ</p>
+      <section className="min-h-80 w-full gap-5 flex flex-col justify-center items-center xl:px-5 lg:px-5 px-3 py-20">
+        <p className="font-heading xl:text-3xl lg:text-3xl text-2xl text-center">ABOUT KITI</p>
         <div className="w-full flex xl:flex-row lg:flex-row flex-col-reverse justify-center items-center">
           <div className="h-80 aspect-square relative">
-            <Image src="/graphics/head_8.png" alt="" fill/>
+            <Image src="/nobg.png" alt="" height={500} width={500} />
           </div>
-          <article className="flex-1">
-            <p className="text-2xl font-body text-left">On teh gretest blokchane of all tiem, he stands as a monumint to teh glory of meme tokens, emboding the sprit of the game and beyond. As a towering figer on teh cort, 
-            his dunks are lyke thunder from teh sky, shakin teh very foundatons of teh arena. In short, Sheq Onill isn’t just a sports icon; he’s a multi-faceted entertainer, lighting up teh blockchain with his unique 
-            blend of talent and charisma, a true meme token hero in the world of crypto!</p>
+          <article className="flex-1 flex flex-col gap-6 p-5">
+            <p className="text-xl font-body text-left">Once upon a quiet corner of the Solana blockchain lived KITI, the stylish cat. KITI adored wearing hats more than anything else in the world. Every day, he sported a different hat, ranging from vibrant fruit designs to whimsical fish shapes. While other cats lounged lazily, KITI strutted around, showcasing his unique headgear, oblivious to the hustle around him.</p>
+            <p className="text-xl font-body text-left">One day, KITI's owner decided to create a digital representation of him on the Solana blockchain. KITI's digital counterpart, adorned with an array of eclectic hats, became a symbol of creativity in the fast-paced world of crypto. And so, KITI the fashionable cat, flaunted his fish and fruit hats, becoming a legend on the blockchain.</p>
           </article>
         </div>
       </section>
 
-      <ShaqComponent />
+      <section className="bg-sky-300 min-h-80 w-full relative gap-3 flex flex-col justify-center items-center xl:px-5 lg:px-5 px-3 py-20">
+        <p className="font-heading xl:text-3xl lg:text-3xl text-2xl text-center text-black z-10">$KITI VIDS</p>
+        <div className="w-1/2 aspect-square z-10">
+          <video src="/edit.mp4" className="h-full w-full" controls />
+        </div>
+        <Image src="/garden.png" alt="" fill />
+      </section>
+
+      <ImageCanvas />
 
     </main>
   );

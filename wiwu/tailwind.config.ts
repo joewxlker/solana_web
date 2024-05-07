@@ -10,8 +10,8 @@ export default {
         body: ["var(--font-body)", ...fontFamily.sans],
       },
       colors: {
-        "p1" : "#15803d",
-        "p2" : "#fcd34d",
+        "p1" : "#ffffff",
+        "p2" : "#ffffff",
       }
     },
   },
