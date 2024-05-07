@@ -8,10 +8,10 @@ export class Music {
     }
 
     handleClick() {
-        this.music_element.play();
+        void this.music_element.play();
     }
 
     destroy() {
-        window.removeEventListener("click", this.handleClick);
+        window.removeEventListener("click", this.handleClick.bind(this));
     }
 }

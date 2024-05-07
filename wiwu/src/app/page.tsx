@@ -22,7 +22,7 @@ export default function HomePage() {
           </div>
           <article className="flex-1 flex flex-col gap-6 p-5">
             <p className="text-xl font-body text-left">Once upon a quiet corner of the Solana blockchain lived KITI, the stylish cat. KITI adored wearing hats more than anything else in the world. Every day, he sported a different hat, ranging from vibrant fruit designs to whimsical fish shapes. While other cats lounged lazily, KITI strutted around, showcasing his unique headgear, oblivious to the hustle around him.</p>
-            <p className="text-xl font-body text-left">One day, KITI's owner decided to create a digital representation of him on the Solana blockchain. KITI's digital counterpart, adorned with an array of eclectic hats, became a symbol of creativity in the fast-paced world of crypto. And so, KITI the fashionable cat, flaunted his fish and fruit hats, becoming a legend on the blockchain.</p>
+            <p className="text-xl font-body text-left">One day, KITI&apos;s owner decided to create a digital representation of him on the Solana blockchain. KITI&apos;s digital counterpart, adorned with an array of eclectic hats, became a symbol of creativity in the fast-paced world of crypto. And so, KITI the fashionable cat, flaunted his fish and fruit hats, becoming a legend on the blockchain.</p>
           </article>
         </div>
       </section>
