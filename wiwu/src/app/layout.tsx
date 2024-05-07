@@ -17,8 +17,8 @@ const body = Gochi_Hand({
 });
 
 export const metadata = {
-  title: "$PIPU",
-  description: "Once upon a quiet corner of the Solana blockchain lived Pipu, the stylish cat.",
+  title: "$KITI",
+  description: "Once upon a quiet corner of the Solana blockchain lived kiti, the stylish cat.",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
