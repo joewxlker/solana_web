@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Pro 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2024 Fonticons, Inc.-->
+    <defs>
+        <linearGradient id="blue-green-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#9945FF; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#14F195; stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <path fill="url(#blue-green-gradient)" d="M448 32H0V480H448V32zM160 224V384H96V224h64zm32-96h64V384H192V128zM352 288v96H288V288h64z"/>
+  </svg>
