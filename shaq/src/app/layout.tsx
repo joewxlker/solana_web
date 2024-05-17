@@ -1,6 +1,6 @@
 import "~/styles/globals.css";
 
-import { Bangers, Gochi_Hand, Protest_Strike } from "next/font/google";
+import { Bangers, Gochi_Hand } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -38,20 +38,20 @@ export default function RootLayout({
               <Image src="/image.png" className="drop-shadow-md" alt="" fill />
           </div>
           <div className="flex-1 flex flex-row justify-end items-center gap-5" title="telegram">
-            <Link href="" className="h-full aspect-square relative">
+            <Link href="https://t.me/SheqOfficial" className="h-full aspect-square relative">
               <Image src="/icons/telegram.svg" className="drop-shadow-md" alt="" fill />
             </Link>
-            <Link href="" className="h-full aspect-square relative" title="twitter">
+            <Link href="https://x.com/OnillSheq" className="h-full aspect-square relative" title="twitter">
               <Image src="/icons/twitter.svg" className="drop-shadow-md" alt="" fill />
             </Link>
-            <Link href="" className="h-full aspect-square relative" title="chart">
+            <Link href="https://dexscreener.com/solana/s2kXZmC5Qojc23skh99zLwov7b8rFJZ4nDPKK2T4rDr" className="h-full aspect-square relative" title="chart">
               <Image src="/icons/chart.svg" alt="" className="drop-shadow-md" fill />
             </Link>
           </div>
         </header>
         {children}
         <footer className="h-40 w-full bg-stone-900 flex flex-col items-center justify-center">
-          <p className="font-heading xl:text-2xl lg:text-2xl text-stone-400 text-center">CA: 63yW79f6d7xJhgBj6QF4bzm2btjMBMhcq391hL3Kij6J</p>
+          <p className="font-heading xl:text-2xl lg:text-2xl text-stone-400 text-center">CA: s2kXZmC5Qojc23skh99zLwov7b8rFJZ4nDPKK2T4rDr</p>
         </footer>
         </body>
     </html>

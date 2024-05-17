@@ -22,10 +22,12 @@ export const metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+const mint_id = "CMwPcgXP1xLsTo4LiXcgCcaw4SUFDJRNpg9zRLFZzbDc";
+
 const links = {
-  telegram: "",
-  twitter: "",
-  chart: "",
+  telegram: "https://t.me/KitiOfficial",
+  twitter: "https://twitter.com/kitisolwifhat",
+  chart: `https://dexscreener.com/solana/${mint_id}`,
 }
 
 export default function RootLayout({
@@ -54,7 +56,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer className="h-40 w-full bg-sky-400 flex flex-col items-center justify-center">
-          <p className="font-heading xl:text-2xl lg:text-2xl text-md text-white text-center">CA: 63yW79f6d7xJhgBj6QF4bzm2btjMBMhcq391hL3Kij6J</p>
+          <p className="font-heading xl:text-2xl lg:text-2xl text-md text-white text-center">CA: {mint_id}</p>
         </footer>
         </body>
     </html>

@@ -14,5 +14,5 @@ export const ImageCanvas = () => {
         const music = new Music();
         return () => music.destroy(); 
     }, []);
-    return <canvas className="absolute top-0 z-40" id="image_canvas" />
+    return <canvas className="absolute top-0 z-40 pointer-events-none" id="image_canvas" />
 }
