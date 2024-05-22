@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./src/assets/roblox-dance.gif"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$ROBLOX</title>
+    <script
+      src="https://example.com/fontawesome/vVERSION/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+  </head>
+
+  <body id="root" class="bg-[#037bfe]">
+    <main
+      id="app"
+      class="layout relative flex min-h-screen flex-col items-center text-center text-[#2c3e50]"
+    >
+      <header class="absolute top-0 z-50 flex w-screen flex-row py-2 px-3">
+        <a href="/" class="flex flex-1 flex-row items-center">
+          <img
+            class="animate-flip h-14 w-auto"
+            src="./src/assets/karen-moving-face.gif"
+            alt=""
+          />
+        </a>
+        <div
+          class="justify-stretch flex h-full flex-[0.2] flex-col items-stretch px-2"
+        >
+          <a
+            id="chart_link"
+            class="button flex items-center justify-center border-black"
+            target="_blank"
+          >
+            CHART
+          </a>
+        </div>
+      </header>
+
+      <div
+        id="landing"
+        class="flex w-screen max-w-[2000px] flex-col justify-center py-40"
+      >
+        <div class="flex flex-row items-center justify-evenly pt-60 pb-28">
+          <!-- <h2 class="text-8xl font-bold text-black">ROBLOX ON SOL</h2> -->
+          <a id="telegram_link">
+            <button class="text-t1 button px-5">
+              <p>TELEGRAM</p>
+            </button>
+          </a>
+          <a id="twitter_link">
+            <button class="text-t1 button px-5">
+              <p>TWITTER</p>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="py-20 px-3">
+        <div class="button px-5 py-12">
+          <h3 class="text-6xl font-semibold text-black">ABOUT</h3>
+          <div
+            class="justify-stretch flex flex-col items-stretch lg:flex-row xl:flex-row"
+          >
+            <div class="flex flex-1 items-center justify-center">
+              <p class="text-2xl text-black">
+                Roblox on sol is a token based on the insanely memeable and
+                popular worldwide video game phenomena that allows players to
+                program games and play games created by others. In that spirit,
+                the "OOF" token aims to bring creativity and infinite
+                memeability to the sol ecosystem.
+              </p>
+            </div>
+            <div class="flex flex-1 items-center justify-center">
+              <img src="./src/assets/roblox-dance.gif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full p-3">
+        <video
+          class="aspect-video w-full"
+          controls
+          autoplay
+          muted
+          src="./src/assets/roblox.mp4"
+        ></video>
+      </div>
+
+      <footer class="w-screen max-w-[2000px] py-12 px-3">
+        <p class="text-lg font-semibold text-white">
+          Disclaimer: Cryptocurrency investments are subject to risk, and past
+          performance is not indicative of future results. Please conduct your
+          research and consult with a qualified financial advisor before
+          investing.
+        </p>
+      </footer>
+      <div id="overlay" class="fixed inset-0 z-[5000] bg-black"></div>
+    </main>
+  </body>
+  <script type="module" src="./src/main.js"></script>
+</html>

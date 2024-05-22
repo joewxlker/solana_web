@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  @apply text-xl font-bold text-white hover:text-blue-400;
+}
+
+#landing {
+  background-image: url(/src/assets/83772-16560554771600-1920.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.button {
+  box-shadow: 0 0 0.2rem 0.1rem black;
+  border-top: solid 3px rgb(255, 255, 255);
+  border-left: solid 3px rgb(247, 247, 247);
+  border-right: solid 3px rgb(197, 197, 197);
+  border-bottom: solid 3px rgb(172, 172, 172);
+  background-color: rgb(206, 203, 203);
+  color: black;
+  min-height: 3rem;
+  font-size: x-large;
+}
+
+header {
+  @apply m-auto max-w-[2000px];
+}
+
+body {
+  font-family: "Courier New", Courier, monospace !important;
+  background-color: rgb(20, 12, 31);
+  /* animation: background 3s infinite alternate ease-in-out; */
+}
+
+.cat_image {
+  /* animation: animate-flip 1s infinite linear; */
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.layout {
+  @apply m-auto max-w-[2000px];
+  width: 100vw;
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+}
+
+.alert {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply bg-black p-4 lg:p-5 xl:p-5;
+}
+
+.alert-container {
+  background-color: rgb(206, 203, 203);
+  box-shadow: 0 0 0.2rem 0.1rem black;
+  border: solid 5px rgb(59, 59, 59);
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @apply m-auto max-w-[2000px];
+}
+
+.alert-container header {
+  border-top: solid 3px rgb(255, 255, 255);
+  border-left: solid 3px rgb(247, 247, 247);
+  border-right: solid 3px rgb(197, 197, 197);
+  border-bottom: solid 3px rgb(172, 172, 172);
+  background-color: rgb(138, 31, 31);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.alert-container header p {
+  font-weight: bold;
+  color: white;
+  font-size: x-large;
+}
+
+.alert-container div {
+  flex: 1;
+  animation: background 3s infinite alternate ease-in-out;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.alert-container p {
+  flex: 1;
+  font-size: x-large;
+}
+
+.alert-container button {
+  box-shadow: 0 0 0.2rem 0.1rem black;
+  border-top: solid 3px rgb(255, 255, 255);
+  border-left: solid 3px rgb(247, 247, 247);
+  border-right: solid 3px rgb(197, 197, 197);
+  border-bottom: solid 3px rgb(172, 172, 172);
+  height: 4rem;
+  font-size: x-large;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.animate-flip {
+  animation: animate-flip 1s infinite linear;
+}
+
+@keyframes animate-flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes background {
+  from {
+    background-position-y: 500px;
+  }
+  to {
+    background-position-y: -500px;
+  }
+}
